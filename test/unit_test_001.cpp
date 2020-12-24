@@ -99,7 +99,7 @@ unittest(test_get_set)
   for (int i = 1; i < 20; i++)
   {
      gt.setGamma(i * 0.1);
-     assetEqualFloat(i * 0.1, gt.getGamma(), 0.001);
+     assertEqualFloat(i * 0.1, gt.getGamma(), 0.001);
   }
 }
 
