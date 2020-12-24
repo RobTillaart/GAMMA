@@ -2,11 +2,12 @@
 //
 //    FILE: gamma.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.0
+// VERSION: 0.1.1
 //    DATE: 2020-08-08
 // PURPOSE: Arduino Library to efficiently hold a gamma lookup table
 
-// 0.1.0    2020-08-08 initial release
+//  0.1.0   2020-08-08  initial release
+//  0.1.1   2020-12-24  arduino-ci + unit test 
 
 #include "Arduino.h"
 
@@ -35,7 +36,7 @@ public:
     _mask = (1 << _shift) - 1;
     _interval = 256 / _size;
     _table = (uint8_t *)malloc(_size + 1);
-    //setGamma(2.8);
+    setGamma(2.8);
   }
 
   ~GAMMA()
