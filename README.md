@@ -1,3 +1,8 @@
+
+[![Arduino CI](https://github.com/RobTillaart/GAMMA/workflows/Arduino%20CI/badge.svg)](https://github.com/marketplace/actions/arduino_ci)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RobTillaart/GAMMA/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/RobTillaart/GAMMA.svg?maxAge=3600)](https://github.com/RobTillaart/GAMMA/releases)
+
 # GAMMA
 
 Arduino Library for the GAMMA function to adjust brightness of LED's etc.
@@ -25,13 +30,14 @@ The class can be used to dump the internal table e.g. to place in PROGMEM.
 
 ## Interface
 
-Core functions
+### Core functions
+
 - **GAMMA(size = 32)** constructor, gets the size of the internal
 array as parameter. The array is initialized with a gamma == 2.8 which
 is an often used value.  
 The default for size = 32 as this is a good balance between performance
 and size ot the internal array. 
-The size parameter must be in {2, 4,8,16,32,64,128,256 }  
+The size parameter must be in {2, 4, 8, 16, 32, 64, 128, 256 }  
 - **setGamma(float gamma)** calculates and fills the array with new values.
 This can be done runtime so runtime adjustment of gamma mapping.  
 This function relative quite some time.
@@ -39,7 +45,8 @@ This function relative quite some time.
 - **operator \[\]** allows the GAMMA object to be accessed as an array.
 like ```x = G[40];``` Makes it easy to switch with a real array.
 
-Development functions
+### Development functions
+
 - **size()** returns size of the internal array.
 - **distinct()** returns the number of distinct values in the table.
 - **dump()** dumps the internal table to Serial. Can be useful to create
