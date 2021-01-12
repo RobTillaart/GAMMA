@@ -3,7 +3,7 @@
 //  AUTHOR: Rob Tillaart
 //    DATE: 2020-12-24
 // PURPOSE: unit tests for the GAMMA library
-//          https://github.com/RobTillaart/
+//          https://github.com/RobTillaart/GAMMA
 //          https://github.com/Arduino-CI/arduino_ci/blob/master/REFERENCE.md
 //
 
