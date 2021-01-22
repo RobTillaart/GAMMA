@@ -9,7 +9,11 @@
 //  0.1.0   2020-08-08  initial release
 //  0.1.1   2020-12-24  arduino-ci + unit test 
 
+
 #include "Arduino.h"
+
+#define GAMMA_LIB_VERSION         (F("0.1.1"))
+
 
 #if defined(ESP8266) || defined(ESP32)
 #include "types.h"
