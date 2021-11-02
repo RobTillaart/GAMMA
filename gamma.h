@@ -9,7 +9,8 @@
 //  0.1.0   2020-08-08  initial release
 //  0.1.1   2020-12-24  arduino-ci + unit test 
 //  0.2.0   2021-11-02  update build-CI, badges
-//                      add begin()
+//                      add begin() - fixes ESP32 crash.
+
 
 #include "Arduino.h"
 
