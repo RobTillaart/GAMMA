@@ -33,7 +33,7 @@ This allows adjustments that a fixed table does not have.
 
 The class can be used to dump the internal table e.g. to place in PROGMEM.
 
-Note: tested on AVR only.
+Note: tested on UNO and ESP32 only.
 
 
 ## Interface
