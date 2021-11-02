@@ -8,10 +8,12 @@
 
 #include "gamma.h"
 
+
 GAMMA gt1(256);
 
 // fastGamma is based upon values found with GAMMA(8).setGamma(2.8);
 // it is however not that fast...
+
 
 int fastGamma(uint8_t idx)
 {
@@ -63,4 +65,6 @@ void loop()
 {
 }
 
+
 // -- END OF FILE --
+

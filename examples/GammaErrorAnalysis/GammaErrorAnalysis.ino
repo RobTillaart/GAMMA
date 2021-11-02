@@ -8,6 +8,7 @@
 
 #include "gamma.h"
 
+
 GAMMA gt1(256);
 GAMMA gt2(128);
 GAMMA gt3(64);
@@ -19,6 +20,7 @@ GAMMA gt8(2);
 
 uint32_t start, d1;
 volatile int x;
+
 
 void setup()
 {
@@ -40,6 +42,7 @@ void setup()
   Serial.println("\ndone...\n");
 }
 
+
 void test_error(GAMMA gt)
 {
   int count = 0;
@@ -59,8 +62,11 @@ void test_error(GAMMA gt)
   Serial.println(maxdiff);
 }
 
+
 void loop()
 {
 }
 
+
 // -- END OF FILE --
+

@@ -8,11 +8,13 @@
 
 #include "gamma.h"
 
+
 GAMMA gt1(256);
 GAMMA gt2(128);
 GAMMA gt3(64);
 GAMMA gt4(32);    // default
 GAMMA gt5(16);
+
 
 void setup()
 {
@@ -39,12 +41,15 @@ void setup()
     Serial.print(gt5[i]);
     Serial.println();
   }
+  
+  Serial.println("\ndone...\n");
 }
 
 
 void loop()
 {
-
 }
 
+
 // -- END OF FILE --
+

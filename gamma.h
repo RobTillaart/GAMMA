@@ -19,6 +19,7 @@
 #include "types.h"
 #endif
 
+
 class GAMMA
 {
 
@@ -43,10 +44,12 @@ public:
     setGamma(2.8);
   }
 
+
   ~GAMMA()
   {
     if (_table) free(_table);
   }
+
 
   void setGamma(float gamma)
   {
@@ -62,10 +65,12 @@ public:
     }
   }
 
+
   float getGamma()
   {
     return _gamma;
   };
+
 
   uint8_t operator[] (uint8_t idx)
   {
@@ -81,10 +86,12 @@ public:
     return _table[i] + delta;
   }
 
+
   uint16_t size()
   {
     return _size + 1;
   };
+
 
   int distinct()
   {
@@ -98,6 +105,7 @@ public:
     }
     return cnt;
   }
+
 
   void dump()
   {
@@ -115,7 +123,8 @@ private:
   uint8_t   _interval = 0;
   float     _gamma    = 0;
   uint8_t * _table;
-
 };
 
+
 // -- END OF FILE --
+

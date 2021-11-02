@@ -37,18 +37,6 @@ unittest_teardown()
 {
 }
 
-/*
-unittest(test_new_operator)
-{
-  assertEqualINF(exp(800));
-  assertEqualINF(0.0/0.0);
-  assertEqualINF(42);
-  
-  assertEqualNAN(INFINITY - INFINITY);
-  assertEqualNAN(0.0/0.0);
-  assertEqualNAN(42);
-}
-*/
 
 unittest(test_constructor)
 {
@@ -88,6 +76,7 @@ unittest(test_constructor)
   assertEqual(8, gt6.distinct());
 }
 
+
 unittest(test_get_set)
 {
   GAMMA gt;  // uses default 32 size
@@ -98,6 +87,7 @@ unittest(test_get_set)
      assertEqualFloat(i * 0.1, gt.getGamma(), 0.001);
   }
 }
+
 
 unittest_main()
 

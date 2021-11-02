@@ -8,6 +8,7 @@
 
 #include "gamma.h"
 
+
 GAMMA gt1(256);
 GAMMA gt2(128);
 GAMMA gt3(64);
@@ -17,13 +18,13 @@ GAMMA gt5(16);
 uint32_t start, d1;
 volatile int x;
 
+
 void setup()
 {
   Serial.begin(115200);
   Serial.println(__FILE__);
 
   Serial.println("\ntiming in microseconds\n");
-
 
   Serial.println("SETGAMMA");
   Serial.println("SIZE\tTIME\tTIME per element");
@@ -34,7 +35,6 @@ void setup()
   test_setGamma(gt5);
   Serial.println();
 
-
   Serial.println("SETGAMMA II");
   Serial.println("SIZE\tTIME\tTIME per element");
   test_setGamma(gt1);
@@ -43,7 +43,6 @@ void setup()
   test_setGamma(gt4);
   test_setGamma(gt5);
   Serial.println();
-
 
   Serial.println("GET[]");
   Serial.println("SIZE\tTIME\tTIME per element");
@@ -54,9 +53,9 @@ void setup()
   test_index(gt5);
   Serial.println();
 
-
   Serial.println("\ndone...");
 }
+
 
 void test_setGamma(GAMMA & gt)
 {
@@ -70,6 +69,7 @@ void test_setGamma(GAMMA & gt)
   Serial.println(1.0 * d1 / gt.size());
   delay(10);
 }
+
 
 void test_index(GAMMA & gt)
 {
@@ -92,4 +92,6 @@ void loop()
 {
 }
 
+
 // -- END OF FILE --
+
