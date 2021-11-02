@@ -1,7 +1,7 @@
 //
 //    FILE: GammaErrorAnalysis.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.0
+// VERSION: 0.2.0
 // PURPOSE: demo
 //    DATE: 2020-08-08
 
@@ -26,6 +26,15 @@ void setup()
 {
   Serial.begin(115200);
   Serial.println(__FILE__);
+
+  gt1.begin();
+  gt2.begin();
+  gt3.begin();
+  gt4.begin();
+  gt5.begin();
+  gt6.begin();
+  gt7.begin();
+  gt8.begin();
 
   Serial.println("\nError Analysis 256 elements = reference\n");
   Serial.println("Size\tErrors\tMaximum");

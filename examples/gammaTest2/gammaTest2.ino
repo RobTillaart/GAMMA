@@ -1,7 +1,7 @@
 //
 //    FILE: gammaTest2.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
+// VERSION: 0.2.0
 // PURPOSE: demo setGamma
 //    DATE: 2020-08-08
 
@@ -17,11 +17,14 @@ void setup()
 {
   Serial.begin(115200);
   Serial.println("gammaTest2.ino");
+
+  gt.begin();
+
   for (int i = 0; i < 256; i++)
   {
-    for (int gam = 1; gam < 10; gam += 1)
+    for (float gamma = 0.1; gamma < 10; gamma *= 2)
     {
-      gt.setGamma(gam);
+      gt.setGamma(gamma);
       Serial.print(gt[i]);
       Serial.print('\t');
     }

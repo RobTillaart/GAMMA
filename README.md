@@ -33,20 +33,22 @@ This allows adjustments that a fixed table does not have.
 
 The class can be used to dump the internal table e.g. to place in PROGMEM.
 
+Note: tested on AVR only.
+
 
 ## Interface
 
 ### Core functions
 
 - **GAMMA(uint16_t size = 32)** constructor, gets the size of the internal
-array as parameter. The array is initialized with a gamma == 2.8 which
-is an often used value.  
-The default for size = 32 as this is a good balance between performance
-and size of the internal array. 
-The size parameter must be in {2, 4, 8, 16, 32, 64, 128, 256 }  
+array as parameter. The default for size = 32 as this is a good balance between performance
+and size of the internal array. The size parameter must be in {2, 4, 8, 16, 32, 64, 128, 256 }.
+- **begin()** The array is initialized with a gamma == 2.8 which is an often used value.  
+**begin()** must be called before any other function.
 - **setGamma(float gamma)** calculates and fills the array with new values.
 This can be done runtime so runtime adjustment of gamma mapping.  
 This function takes relative quite some time.
+The parameter **gamma** must be > 0. The value 1 gives an 1:1 mapping.
 - **getGamma()** returns the set gamma value.
 - **operator \[\]** allows the GAMMA object to be accessed as an array.
 like ```x = G[40];``` Makes it easy to switch with a real array.
@@ -67,6 +69,7 @@ See example
 
 ## Future ideas
 
+- test other platforms
 - improve documentation
 - look for optimizations 
 - uint16 version?
