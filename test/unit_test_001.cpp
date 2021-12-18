@@ -39,7 +39,7 @@ unittest_teardown()
 }
 
 
-unittest(test_constructor)
+unittest(test_constants)
 {
   assertEqual( 32, GAMMA_DEFAULT_SIZE);
   assertEqual(256, GAMMA_MAX_SIZE);
