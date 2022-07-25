@@ -2,7 +2,6 @@
 //    FILE: gammaPerformance.ino
 //  AUTHOR: Rob Tillaart
 // PURPOSE: demo
-//    DATE: 2020-08-08
 
 
 #include "gamma.h"
@@ -102,3 +101,4 @@ void loop()
 
 
 // -- END OF FILE --
+
