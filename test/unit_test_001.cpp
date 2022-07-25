@@ -64,7 +64,7 @@ unittest(test_constructor)
   gt2.begin();
   assertEqual(129, gt2.size());
   assertEqualFloat(2.8, gt2.getGamma(), 0.0001);
-  assertEqual(98,  gt2.distinct());
+  assertEqual(97,  gt2.distinct());
 
   GAMMA gt3(64);
   gt3.begin();
