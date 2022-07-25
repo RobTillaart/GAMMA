@@ -34,7 +34,7 @@ public:
   float getGamma();
   //  access values with index operator
   //  index = 0 .. size
-  uint8_t operator[] (uint16_t index);
+  uint8_t operator[] (uint8_t index);
 
   //  META INFO
   uint16_t size();
@@ -52,6 +52,8 @@ private:
   uint8_t   _interval = 0;
   float     _gamma    = 0;
   uint8_t * _table    = NULL;
+
+  float     fastPow(float a, float b);
 };
 
 

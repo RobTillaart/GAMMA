@@ -60,7 +60,7 @@ Returns false if gamma <= 0 or if no table is allocated.
 - **uint8_t operator \[uint8_t index\]** allows the GAMMA object to be accessed as an array.
 like ```x = G[40];``` Makes it easy to switch with a real array. 
 The value returned is in the range 0 .. 255, so the user may need to scale it e.g. to 0.0 - 1.0.
-Note: if index > size or internal table not allocated the function returns 0. 
+Note: if internal table not allocated the function returns 0. 
 As this is a legitimate value the user should take care.
 
 
