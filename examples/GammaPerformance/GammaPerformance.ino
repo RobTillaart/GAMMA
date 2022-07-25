@@ -21,7 +21,10 @@ volatile int x;
 void setup()
 {
   Serial.begin(115200);
+  Serial.println();
   Serial.println(__FILE__);
+  Serial.print("GAMMA_LIB_VERSION: ");
+  Serial.println(GAMMA_LIB_VERSION);
 
   gt1.begin();
   gt2.begin();
