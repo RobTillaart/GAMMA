@@ -110,7 +110,7 @@ unittest(test_gamma_fail)
   GAMMA gt;  // uses default 32 size
 
   //  do not call begin() to force allocate error
-  assertFalse(gt.setGamma(3.14);
+  assertFalse(gt.setGamma(3.14));
   assertEqualFloat(1.0, gt.getGamma(), 0.001);
   
   assertEqualFloat(0.0, gt[63], 0.0001);
