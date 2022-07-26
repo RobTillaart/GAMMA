@@ -50,7 +50,7 @@ private:
   uint8_t   _mask     = 0;
   uint16_t  _size     = 0;
   uint8_t   _interval = 0;
-  float     _gamma    = 0;
+  float     _gamma    = 1.0;  //  1.0 == no gamma, linear.
   uint8_t * _table    = NULL;
 
   float     fastPow(float a, float b);

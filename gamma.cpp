@@ -17,11 +17,12 @@
 //                      add dumpArray(Stream)
 //                      fix distinct()
 //
-//  0.3.0   2022-07-XX  change return type begin + setGAMMA
+//  0.3.0   2022-07-26  change return type begin + setGAMMA
 //                      add test gamma <=0 in setGamma
 //                      add _table == NULL tests
 //                      fixed type of index in [] operator.
 //                      adjust rounding in setGamma to minimize errors.
+//                      update build-CI
 
 
 #include "gamma.h"
