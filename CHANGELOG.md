@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ## [0.4.0] - 2023-01-26
-- optimize **setGamma()** for ESP32
-- optimize **get[]** (minor)
+- optimize **setGamma()** especially for ESP32
+- optimize **get[]**  especially for ESP32
 - update GitHub actions
 - update license 2023
 - update readme.md
