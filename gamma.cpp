@@ -59,7 +59,8 @@ bool GAMMA::setGamma(float gamma)
 {
   _negative = false;
   if (_table == NULL) return false;
-  if (gamma <= 0)
+  if (gamma == 0) return false;
+  if (gamma < 0)
   {
     _negative = true;
     gamma = -gamma;
