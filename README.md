@@ -75,16 +75,17 @@ This can be done runtime, so adjustment of gamma mapping is possible anytime.
 This calculation are relative expensive and takes quite some time (depending on size).
 If the internal array already is calculated for gamma, the calculation will be skipped.
 Returns false if gamma == 0 or if no array is allocated.
-The parameter gamma normally must be > 0. The value 1 gives an 1:1 mapping.
-Since 0.5.0 the library supports a negative value of **gamma**.
-It inverts the values returned (0..255) => (255..0).
-This can be useful e.g. for inverted PWM polarity.
 - **float getGamma()** returns the set gamma value.
 - **uint8_t operator \[uint8_t index\]** allows the GAMMA object to be accessed as an array.
 like ```x = G[40];``` Makes it easy to switch with a real array.
 The value returned is in the range 0 .. 255, so the user may need to scale it e.g. to 0.0 - 1.0.
 Note: if internal array not allocated the function returns 0.
 As this is a legitimate value the user should take care.
+
+The parameter **gamma** normally must be > 0. The value 1 gives an 1:1 mapping.
+Since 0.5.0 the library supports a negative value of **gamma**.
+It inverts the values returned (0..255) => (255..0).
+This can be useful e.g. for inverted PWM polarity.
 
 
 ### Development functions
