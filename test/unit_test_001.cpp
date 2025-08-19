@@ -120,7 +120,7 @@ unittest(test_gamma_fail)
   //  allocate
   assertTrue(gt.begin());
   //  still fails.
-  assertFalse(gt.setGamma(-2.0));
+  assertFalse(gt.setGamma(0.0));
   //  this works now
   assertTrue(gt.setGamma(3.14));
   assertEqualFloat(3.14, gt.getGamma(), 0.001);
